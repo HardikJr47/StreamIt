@@ -1,0 +1,150 @@
+.detailsBanner{
+  margin-bottom: 0;
+  padding-top: 60px;
+  min-height: 640px;
+  padding-bottom: 105px;
+}
+
+.detailsBanner .backdrop-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.detailsBanner .backdrop-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.movieDetailsWrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.movieDetailsWrap .left-block{
+  max-width: 350px;
+}
+
+.movieDetailsWrap .left-block img{
+  border-radius: 20px;
+}
+
+.detailsBanner .opacity-layer{
+  z-index: -1;
+}
+
+.movieDetailsWrap h1{
+  font-size: 38px;
+  line-height: 45px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.movieDetailsWrap .sub-title{
+  margin: 15px 0;
+  opacity: 0.4;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.movieDetailsWrap .genres{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+  flex-flow: row wrap;
+}
+
+.movieDetailsWrap .genres span{
+  background-color: #e50914;
+  padding: 3px 5px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.overview{
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.overview p{
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+.infoList{
+  list-style: none;
+  margin-top: 30px;
+  line-height: 40px;
+}
+
+.infoList>span{
+  margin-right: 20px;
+}
+
+.infoList span>span{
+  opacity: 0.6;
+}
+
+.castCard p{
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width:1279px) {
+  .movieDetailsWrap {
+      gap: 40px;
+  }
+
+  .movieDetailsWrap .left-block {
+      max-width: 300px;
+  }
+}
+
+@media (max-width:1024px){
+  .overview p {
+      font-size: 16px;
+      line-height: 23px;
+  }
+}
+
+@media (max-width:576px) {
+  .movieDetailsWrap{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+
+  .movieDetailsWrap h1 {
+      font-size: 22px;
+      line-height: 30px;
+  }
+
+  .movieDetailsWrap .left-block {
+      max-width: 230px;
+  }
+
+  .movieDetailsWrap .left-block  img{
+      border-radius: 10px;
+  }
+
+  .detailsBanner {
+      padding-top: 90px;
+  }
+
+  .movieDetailsWrap .sub-title {
+      font-size: 20px;
+  }
+}
